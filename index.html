@@ -12,6 +12,34 @@
 
     <h1 class="heading">Let's play Lucky Game</h1>
 
+    <section class="container">
+        <div class="board">
+            <div class="board-header">
+                <form>
+                    <input type="text" name="winingScore" placeholder="Enter wining score">
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+
+                </form>
+                <p>Wining Score: <span class="wining-score">0</span></p>
+            </div>
+
+            <div class="board-main">
+                <div class="board-play">
+                    <div class="player-point">
+                        <p class="player-1">Player 1 : <span class="player1-point">0</span></p>
+                        <p class="player-2">Player 2 : <span class="player2-point">0</span></p>
+                    </div>
+                </div>
+
+                <div class="board-btn">
+                    <button class="player-1">Player 1</button>
+                    <button class="player-2">Player 2</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="index.js"></script>
 </body>
