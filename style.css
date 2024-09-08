@@ -1,0 +1,29 @@
+@font-face {
+  font-family: recharge;
+  src: url("./fonts/recharge/recharge\ bd.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-height: 100vh;
+  width: 100%;
+  background-color: #8bbef0;
+}
+
+.heading {
+  text-align: center;
+  margin: 10px 0;
+  font-family: recharge;
+  font-size: 3rem;
+}
+
+.container {
+  width: 80%;
+  height: calc(100vh - 100px);
+  background-color: #0984e3;
+}
