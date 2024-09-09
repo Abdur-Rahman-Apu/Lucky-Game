@@ -1,6 +1,6 @@
 @font-face {
   font-family: recharge;
-  src: url("./fonts/recharge/recharge\ bd.otf");
+  src: url("./assets/fonts/recharge/recharge\ bd.otf");
 }
 
 * {
@@ -150,6 +150,14 @@ input[type="reset"]:hover {
 
 .board-btn button:hover {
   box-shadow: none;
+}
+
+.winning-msg {
+  text-align: center;
+  font-family: recharge;
+  color: white;
+  font-size: 1.4rem;
+  visibility: hidden;
 }
 
 /* Small devices such as large phones (640px and up) */
