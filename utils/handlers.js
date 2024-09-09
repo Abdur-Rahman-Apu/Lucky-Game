@@ -3,6 +3,7 @@ import {
   winnerNameContainer,
   winnerNameElm,
 } from "./elements.js";
+import playVariables from "./variables.js";
 
 const handleAudio = (src) => {
   const audio = new Audio();
@@ -23,7 +24,7 @@ const handleBtnDisableAttr = (elm1, elm2) => {
   elm2.removeAttribute("disabled");
 };
 
-const handleDecideWinner = (playVariables) => {
+const handleDecideWinner = () => {
   const { player1Score, player2Score, winScore } = playVariables;
 
   const isPlayer1Win = player1Score === winScore;

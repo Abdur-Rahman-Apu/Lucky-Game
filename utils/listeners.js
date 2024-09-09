@@ -15,6 +15,7 @@ import {
   handleTypingSound,
 } from "./handlers.js";
 import { getInitialValues } from "./play.js";
+import playVariables from "./variables.js";
 
 const handleTypingListeners = () => {
   textInputElm.addEventListener("keypress", handleTypingSound);
@@ -26,42 +27,43 @@ const handleTypingListeners = () => {
   });
 };
 
-const handleSubmitBtnListener = (playVariables) => {
+const handleSubmitBtnListener = () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const newWiningScore = handleSubmitBtn();
 
     if (newWiningScore) {
-      playVariables.winingScore = newWiningScore;
+      playVariables.winScore = newWiningScore;
     }
     form.reset();
   });
 };
 
-const resetBtnListener = (playVariables) => {
+const resetBtnListener = () => {
   resetBtn.addEventListener("click", () => {
-    playVariables = getInitialValues(playVariables);
+    getInitialValues();
+    console.log(playVariables);
   });
-
-  return playVariables;
+  console.log(playVariables);
+  // return playVariables;
 };
 
-const player1BtnListener = (playVariables) => {
-  player1Btn.addEventListener("click", (e) => {
+const player1BtnListener = () => {
+  player1Btn.addEventListener("click", () => {
     playVariables.player1Score++;
     playVariables.turn = 1;
     player1Point.textContent = playVariables.player1Score;
     handleBtnDisableAttr(player1Btn, player2Btn);
-    handleDecideWinner(playVariables);
+    handleDecideWinner();
   });
 };
-const player2BtnListener = (playVariables) => {
-  player2Btn.addEventListener("click", (e) => {
+const player2BtnListener = () => {
+  player2Btn.addEventListener("click", () => {
     playVariables.player2Score++;
     playVariables.turn = 0;
     player2Point.textContent = playVariables.player2Score;
     handleBtnDisableAttr(player2Btn, player1Btn);
-    handleDecideWinner(playVariables);
+    handleDecideWinner();
   });
 };
 
