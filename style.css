@@ -148,8 +148,16 @@ input[type="reset"]:hover {
   box-shadow: 3px 3px 3px #2d3436;
 }
 
+.board-btn .player-2:disabled {
+  color: gray;
+}
+
 .board-btn button:hover {
   box-shadow: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
 }
 
 .winning-msg {
@@ -157,7 +165,7 @@ input[type="reset"]:hover {
   font-family: recharge;
   color: white;
   font-size: 1.4rem;
-  visibility: hidden;
+  display: none;
 }
 
 /* Small devices such as large phones (640px and up) */

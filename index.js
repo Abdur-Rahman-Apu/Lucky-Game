@@ -1,14 +1,27 @@
 import {
   handleSubmitBtnListener,
   handleTypingListeners,
+  resetBtnListener,
 } from "./utils/listeners.js";
-import { getInitialValues } from "./utils/play.js";
+import { getInitialValues, play } from "./utils/play.js";
 
 (function () {
+  let playVariables = {
+    winScore: 0,
+    turn: 0,
+    player1Score: 0,
+    player2Score: 0,
+  };
+
   // typing sound
   handleTypingListeners();
 
-  let { winScore, turn, player1Score, player2Score } = getInitialValues();
+  playVariables = getInitialValues(playVariables);
+  console.log(playVariables);
 
-  winScore = handleSubmitBtnListener(winScore);
+  handleSubmitBtnListener(playVariables);
+
+  play(playVariables);
+
+  playVariables = resetBtnListener(playVariables);
 })();
