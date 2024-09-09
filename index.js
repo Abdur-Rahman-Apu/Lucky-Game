@@ -1,11 +1,14 @@
-import { textInputElm } from "./utils/elements.js";
-import { handleTypingSound } from "./utils/formHandle.js";
-import { getRandomWinningScore } from "./utils/play.js";
+import {
+  handleSubmitBtnListener,
+  handleTypingListeners,
+} from "./utils/listeners.js";
+import { getInitialValues } from "./utils/play.js";
 
 (function () {
-  // initially set random winning score
-  getRandomWinningScore();
+  // typing sound
+  handleTypingListeners();
 
-  // typing sound for input box
-  textInputElm.addEventListener("keypress", handleTypingSound);
+  let { winScore, turn, player1Score, player2Score } = getInitialValues();
+
+  winScore = handleSubmitBtnListener(winScore);
 })();
