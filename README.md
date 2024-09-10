@@ -1,6 +1,6 @@
 # 🥳 Lucky Game
 
-This is a simple, fast-paced two-player game built using HTML, CSS, and JavaScript. The goal is to see which player can reach the winning score the fastest. The game features interactive sound effects, a responsive design for all screen sizes, and controls to reset the score and values.
+This is a simple, fast-paced two-player game built using HTML, CSS, and JavaScript. The goal is to see which player can reach the winning score the fastest.
 
 ## 🌟 Features
 
