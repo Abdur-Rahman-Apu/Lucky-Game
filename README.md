@@ -1,14 +1,14 @@
 # 🥳 Lucky Game
 
-A lucky game is built using HTML, CSS, and JavaScript.
+This is a simple, fast-paced two-player game built using HTML, CSS, and JavaScript. The goal is to see which player can reach the winning score the fastest. The game features interactive sound effects, a responsive design for all screen sizes, and controls to reset the score and values.
 
 ## 🌟 Features
 
-- Update winning score
-- Player turn is random
-- Reset your game
-- Sound effects
-- Responsive
+- 🏆 Two-player mode: Both players compete to react faster and react to the goal.
+- 🎯 Customizable Winning Score: Players can set and reset the winning score at any time.
+- 🔊 Sound Effects: Enjoy typing, clicking, and clapping sound effects for a more engaging experience.
+- 💻 Responsive Design: The game is optimized for all devices – from desktops to smartphones.
+- ♻️ Reset Functionality: Reset scores and values for a fresh start anytime.
 
 ## Screenshots
 
@@ -16,7 +16,9 @@ A lucky game is built using HTML, CSS, and JavaScript.
 
 ## Tech Stack
 
-HTML, CSS, JavaScript
+- HTML5 for structuring the page.
+- CSS3 for designing a responsive layout.
+- JavaScript (ES6) for game logic and interactivity.
 
 ## Live Link
 
