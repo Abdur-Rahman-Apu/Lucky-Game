@@ -29,7 +29,7 @@ A live demo can be found [here](https://abdur-rahman-apu.github.io/Lucky-Game/)
 1.  Clone the repository:
 
 ```bash
-git clone https://github.com/Abdur-Rahman-Apu/Lucky-Game.git
+git clone https://github.com/Abdur-Rahman-Apu/Lucky-Player.git
 ```
 
 2.  Open index.html in your browser to play the game.
