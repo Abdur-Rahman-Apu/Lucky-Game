@@ -4,6 +4,8 @@ import {
   player1Point,
   player2Btn,
   player2Point,
+  playerTurn,
+  playerTurnContainer,
   winingScore,
   winnerNameContainer,
 } from "./elements.js";
@@ -29,14 +31,12 @@ const getInitialValues = () => {
   playVariables.player1Score = 0;
   playVariables.player2Score = 0;
 
-  // playVariables = { winScore, turn, player1Score, player2Score };
-
-  console.log(playVariables);
-
   if (playVariables.turn) {
     handleBtnDisableAttr(player1Btn, player2Btn);
+    playerTurn.textContent = "Player 2";
   } else {
     handleBtnDisableAttr(player2Btn, player1Btn);
+    playerTurn.textContent = "Player 1";
   }
 
   player1Point.textContent = playVariables.player1Score;
@@ -44,8 +44,7 @@ const getInitialValues = () => {
 
   boardButtonContainer.style.display = "flex";
   winnerNameContainer.style.display = "none";
-
-  // return playVariables;
+  playerTurnContainer.style.display = "block";
 };
 
 const play = () => {

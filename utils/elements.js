@@ -16,6 +16,9 @@ const player2Btn = document.querySelector("button.player-2");
 const winnerNameContainer = document.querySelector(".winning-msg");
 const winnerNameElm = document.querySelector(".winner-name");
 
+const playerTurnContainer = document.querySelector(".player-turn");
+const playerTurn = document.querySelector(".turn");
+
 export {
   boardButtonContainer,
   form,
@@ -23,6 +26,8 @@ export {
   player1Point,
   player2Btn,
   player2Point,
+  playerTurn,
+  playerTurnContainer,
   resetBtn,
   submitBtn,
   textInputElm,

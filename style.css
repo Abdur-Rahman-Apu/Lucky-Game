@@ -160,12 +160,20 @@ button:disabled {
   cursor: not-allowed;
 }
 
-.winning-msg {
+.winning-msg,
+.player-turn {
   text-align: center;
   font-family: recharge;
   color: white;
   font-size: 1.4rem;
+}
+
+.winning-msg {
   display: none;
+}
+
+.player-turn {
+  margin-top: 35px;
 }
 
 /* Small devices such as large phones (640px and up) */

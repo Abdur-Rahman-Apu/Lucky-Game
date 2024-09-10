@@ -7,6 +7,7 @@ import {
   resetBtn,
   submitBtn,
   textInputElm,
+  winingScore,
 } from "./elements.js";
 import { handleSubmitBtn } from "./formHandle.js";
 import {
@@ -33,7 +34,9 @@ const handleSubmitBtnListener = () => {
     const newWiningScore = handleSubmitBtn();
 
     if (newWiningScore) {
+      getInitialValues();
       playVariables.winScore = newWiningScore;
+      winingScore.textContent = newWiningScore;
     }
     form.reset();
   });
@@ -42,10 +45,7 @@ const handleSubmitBtnListener = () => {
 const resetBtnListener = () => {
   resetBtn.addEventListener("click", () => {
     getInitialValues();
-    console.log(playVariables);
   });
-  console.log(playVariables);
-  // return playVariables;
 };
 
 const player1BtnListener = () => {
