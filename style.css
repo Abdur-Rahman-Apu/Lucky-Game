@@ -176,7 +176,7 @@ button:disabled {
 /* Small devices such as large phones (640px and up) */
 @media only screen and (max-width: 640px) {
   .heading {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   .container {
@@ -196,6 +196,7 @@ button:disabled {
 
   .board-header p {
     margin-top: 30px;
+    font-size: 1.3rem;
   }
 
   input[type="text"] {
@@ -217,6 +218,10 @@ button:disabled {
 
   .board-main {
     height: 250px;
+  }
+
+  .player-turn {
+    font-size: 1.3rem;
   }
 }
 
