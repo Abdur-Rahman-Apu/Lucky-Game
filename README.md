@@ -22,7 +22,7 @@ This is a simple, fast-paced two-player game built using HTML, CSS, and JavaScri
 
 ## Demo Link
 
-A live demo can be found [here](https://abdur-rahman-apu.github.io/Lucky-Game/)
+A live demo can be found [here](https://abdur-rahman-apu.github.io/Lucky-Player/)
 
 ## Installation
 
