@@ -1,4 +1,4 @@
-# 🥳 Lucky Game
+# 🥳 Lucky Player
 
 This is a simple, fast-paced two-player game built using HTML, CSS, and JavaScript. The goal is to see which player can reach the winning score the fastest.
 
@@ -22,7 +22,7 @@ This is a simple, fast-paced two-player game built using HTML, CSS, and JavaScri
 
 ## Demo Link
 
-[Lucky game live link](https://abdur-rahman-apu.github.io/Lucky-Game/)
+A live demo can be found [here](https://abdur-rahman-apu.github.io/Lucky-Game/)
 
 ## Installation
 
