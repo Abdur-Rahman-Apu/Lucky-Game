@@ -29,7 +29,7 @@ This is a simple, fast-paced two-player game built using HTML, CSS, and JavaScri
 1.  Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/fast-reaction-game.git
+git clone https://github.com/Abdur-Rahman-Apu/Lucky-Game.git
 ```
 
 2.  Open index.html in your browser to play the game.
